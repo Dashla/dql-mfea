@@ -118,3 +118,4 @@ dmypy.json
 OUTPUT/
 OUT/
 OUTPUT_*/
+gym/
