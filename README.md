@@ -1,6 +1,44 @@
 
 > Paper pending acceptance at WCCI'20
 
+# Setting up the environment
+
+In order to run the experimentation we recommend to create a conda environment from the .yml or requirements file as follows:
+
+To create a new conda encironment from the requirements file:
+
+```bash
+conda create -n dql-mfea --file requirements.txt
+```
+
+using the .yml
+
+```bash
+conda env create -f dql-mfea.yml
+```
+
+Then, activate the environment and run install.sh script:
+
+```bash
+conda activate dql-mfea
+./install.sh
+```
+
+this will install all the dependencies. Finally run the experiment, to replicate the full experimentation run:
+
+```bash
+./EXPERIMENTATION.sh
+```
+
+or
+
+```bash
+python3 exp.py --path (folder where to save data) --filename (path to .txt file where the environments to evolve are specified) 
+```
+
+to run your custom experiments.
+
+
 # Simultaneously Evolving Deep Reinforcement Learning Models via Multifactorial Optimization 
 ## Abstract
 In the recent years, Multifactorial Optimization (MFO) has attracted a lot of interest in the optimization community. MFO is known for its inherent skills to address multiple complex optimization tasks at the same time, while inter-task information transfer is used to improve their convergence speed. These skills make Multifactorial Evolution appealing to be applied to evolve Deep Reinforcement Learning (DQL) models, which is the scenario tackled in this paper. Complex DQL models usually find difficult to converge to optimal solutions, due to the lack of exploration or sparse rewards. In order to overcome these drawbacks, pre-trained models are commonly used to make Transfer Learning, transferring knowledge from the pre-trained to the target domain. Besides, it has been shown that the lack of exploration can be reduced by using meta-heuristic optimization approaches. In this paper we aim to explore the use of the MFO framework to optimize DQL models, making an analysis between MFO and the traditional Transfer Learning and metaheuristic approaches in terms of convergence, speed and policy quality.
