@@ -1,5 +1,11 @@
-
-> Paper pending acceptance at WCCI'20
+>This work can be cited as:
+>
+>@article{martinez2020simultaneously,
+  title={Simultaneously Evolving Deep Reinforcement Learning Models using Multifactorial Optimization},
+  author={Martinez, Aritz D and Osaba, Eneko and Del Ser, Javier and Herrera, Francisco},
+  journal={arXiv preprint arXiv:2002.12133},
+  year={2020}
+}
 
 # Setting up the environment
 
